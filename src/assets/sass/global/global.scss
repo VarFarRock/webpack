@@ -1,0 +1,101 @@
+html{
+    scroll-behavior: smooth;
+}
+.wrapper{
+    margin: 0 auto;
+    max-width: $max-widht;
+    overflow: hidden;
+}
+.indent{
+    margin-bottom: $section-indent;
+}
+.h1{
+    color: $title-color;
+    text-align: center;
+    font-weight: 700;
+    font-size: 80px;
+    line-height: 98px;
+}
+.h2{
+    font-family: $title-font;
+    color: $sub-title;
+    font-size: 44px;
+    line-height: 54px;
+}
+.h3{
+    color: $sub-title;
+    font-family: $title-font;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 27px;
+}
+.h4{
+    color: $title-color;
+    text-align: center;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0.3em;
+}
+.h5{
+    font-family: $title-font;
+    font-style: normal;
+    color: $sub-title;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 27px;
+}
+.h6{
+    font-family: $nav-font;
+    font-style: normal;
+    color: $sub-title;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+}
+.date{
+    color: $date-color;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+}
+.h7{
+    font-family: $nav-font;
+    font-style: normal;
+    color: $sub-title;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+}
+.h8{
+    font-family: $nav-font;
+    font-style: italic;
+    color: $color-black;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+}
+.h9{
+    font-family: $title-font;
+    color: $title-color;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+}
+.btn{
+    cursor: pointer;
+    font-family: $title-font;
+    border: 1px solid $sub-title;
+    border-radius: 10px;
+    width: 190px;
+    height: 50px;
+    letter-spacing: 2px;
+    transition: all 1s ease;
+}
+.btn:hover{
+    color: #374c61;
+    background-color: rgba(1, 148, 233, 0.548);
+    border: none;
+    letter-spacing: 4px;
+}

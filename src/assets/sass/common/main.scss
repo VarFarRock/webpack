@@ -1,0 +1,233 @@
+.main{
+    .projects-trade{
+        &__content{
+            display: flex;
+            justify-content: space-between
+        }
+        &__title-text{
+            text-align: center;
+            margin-bottom: $title-down;
+        }
+        &__title-text::before{
+            content: "";
+            display: block;
+            width: 10%;
+            height: 1px;
+            background: $sub-title;
+            margin: 0 auto;
+            margin-bottom: 30px;
+        }
+        &__content-description{
+            padding: 20px 0 40px 0;
+            width: 60%;
+        }
+        &__content-btn{
+            margin: 0 0 60px 0;
+        }
+        &__content-img{
+            position: relative;
+            .projects-trade__content-item{
+                position: absolute;
+                top: 10%;
+                left: 5%;
+                transform: translate(-10px,-5px);
+            }
+        }
+        &__content-center{
+            flex-direction: column;
+            display: flex;
+            justify-content: center;
+            width: 50%;
+        }
+    }
+    .projects-commerce{
+        &__content{
+            display: flex;
+            justify-content: flex-end;
+        }
+        &__content-center{
+            flex-direction: column;
+            display: flex;
+            justify-content: center;
+            width: 50%;
+        }
+        &__content-description{
+            padding: 20px 0 40px 0;
+            width: 60%;
+        }
+        &__content-btn{
+            margin: 0 0 60px 0;
+        }
+        &__content-img{
+            position: relative;
+            .projects-commerce__content-item{
+                position: absolute;
+                top: 10%;
+                left: -10%;
+                transform: translate(-10px,-5px);
+            }
+        }
+    }
+    .news{
+        background-image: url(/src/assets/img/background/backgroun.png);
+        background-size: cover;
+        position: relative;
+        &__title{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: $title-color;
+            padding: 150px 0 30px 0;
+            font-weight: 700;
+            font-size: 44px;
+            line-height: 54px;
+            font-family: $title-font;
+            font-style: normal;
+        }
+        &__title::before{
+            content: "";
+            display: block;
+            width: 10%;
+            height: 1px;
+            background: $title-color;
+            margin: 0 auto;
+            margin-bottom: 30px;
+        }
+        &__swiper{
+            width: 1170px;
+        }
+        &__card{
+            background-color: $title-color;
+            width: 370px;
+        }
+        &__card-content{
+            padding: 20px;
+        }
+        &__card-title{
+            padding: 0 0 15px;
+        }
+        &__card-description{
+            padding: 0 0 40px;
+        }
+        &__card-aftor{
+            display: flex;
+            img{
+                border-radius: 50px;
+                margin: 0 20px 0 0;
+                width: 60px;
+                height: 60px;
+            }
+            .news__card-subtitle{
+                margin: 0 0 7px 0;
+            }
+        }
+    }
+    .gallery{
+        margin: 0 auto;
+        margin-bottom: 150px;
+        width: $gallery-size;
+        &__content{
+            margin: 0 0 60px 0;
+            display: flex;
+            overflow: hidden;
+            width: 100%;
+            img{
+                cursor: pointer;
+                height: 50%;
+                transition: transform 1s;
+            }
+            img:hover{
+                transform: scale(1.2);
+            }
+        }
+        &__title{
+            text-align: center;
+            padding: 0 0 90px 0;
+        }
+        &__title::before{
+            content: "";
+            display: block;
+            width: 10%;
+            height: 1px;
+            background: $sub-title;
+            margin: 0 auto;
+            margin-bottom: 30px;
+        }
+        &__content-works{
+            img{
+                padding: 0 0 10px 10px;
+                width: 45%;
+            }
+        }
+        &__btn{
+            display: flex;
+            justify-content: center
+            
+        }
+    }
+    .contact{
+        &__contain{
+            position: relative;
+        }
+        &__form-container{
+            display: flex;
+            justify-content: space-evenly;
+            padding: 40px;
+        }
+        &__form{
+            position: absolute;
+            background: $title-color;
+            z-index: 1;
+            width: 770px;
+            height: 450px;
+            top: 50%;
+            left: 30%;
+            transform: translate(-30px,400px);
+        }
+        &__form-submit{
+            width: 40%;
+        }
+        &__form-title{
+            text-align: center;
+        }
+        &__form-title::before{
+            content: "";
+            display: block;
+            width: 10%;
+            height: 1px;
+            background: $sub-title;
+            margin: 0 auto;
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+        &__contacts-item:not(:last-child){
+            margin: 0 0 30px 0;
+        }
+        #username{
+            margin: 0 0 30px 0;
+        }
+        #email{
+            margin: 0 0 30px 0;
+        }
+        input{
+            width: 270px;
+            font-size: 16px;
+            display: block;
+            border: none;
+            border-bottom: 1px solid #ccc;
+        }
+        input:focus {
+            outline: none;
+          }
+        &__form-btn{
+            margin-left: auto;
+            display: block;
+        }
+        #map {
+            height: 700px;
+            /* The height is 400 pixels */
+            width: 100%;
+            /* The width is the width of the web page */
+          }
+    }
+}

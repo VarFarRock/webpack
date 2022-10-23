@@ -1,0 +1,70 @@
+header{
+    .hero{
+        background-image: url(/src/assets/img/background/backgroun.png);
+        background-size: cover;
+        &__content{
+            display: flex;
+            justify-content: space-around;
+            padding: 50px 0 0;
+                @media (max-width: $tab){
+                  display: none;  
+                } 
+            }
+        &__title{
+            padding: 0 0 20px 0;
+        }
+        &__menu{
+            width: 35%;
+        }
+        &__menu-list{
+            display: flex;
+            justify-content: space-between
+        }
+        &__menu-item::before{
+            content: '';
+            display: inline-block;
+            width: 8px;
+            height: 8px;
+            border: 1px solid $title-color;
+            border-radius: 20px;
+            margin-right: 5px;
+        }
+        &__menu-item:hover:before{
+            background-color: $title-color;
+        }
+        &__social{
+            cursor: pointer;
+            width: 10%;
+        }
+        &__social-list{
+            display: flex;
+            justify-content: space-between;
+        }
+        &__btn{
+            z-index: 100;
+            cursor: pointer;
+            position: absolute;
+            top: 95%;
+            left: 50%;
+            transform: translate(-50px,-50px);
+            background: none;
+            border-radius: 20px;
+            border: 1px solid $title-color;
+            width: 2%;
+            height: 4%;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+            animation-name: btn-down;
+            animation-timing-function: cubic-bezier(0.280, 0.840, 0.420, 1);
+            @keyframes btn-down {
+                0%   { transform: scale(1,1)      translateY(0); }
+                10%  { transform: scale(1.1,.9)   translateY(0); }
+                30%  { transform: scale(.9,1.1)   translateY(-100px); }
+                50%  { transform: scale(1.05,.95) translateY(0); }
+                57%  { transform: scale(1,1)      translateY(-7px); }
+                64%  { transform: scale(1,1)      translateY(0); }
+                100% { transform: scale(1,1)      translateY(0); }
+            }
+        }
+    }
+}
